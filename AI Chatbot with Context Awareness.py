@@ -1,7 +1,7 @@
 import random
 
 class ContextAwareChatbot:
-    def __init__(self):
+    def __init__(self):  # Fixed the init method
         self.context = {}
         self.responses = {
             "greeting": ["Hello! How can I help you today?", "Hi there! What can I do for you?"],
@@ -29,7 +29,7 @@ class ContextAwareChatbot:
         
         return random.choice(self.responses["default"])
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # Fixed the name check
     bot = ContextAwareChatbot()
     print("Chatbot: Hello! Start chatting with me. Type 'bye' to exit.")
     
